@@ -93,7 +93,10 @@ export function SalesByCategory() {
         {/* Legenda das categorias */}
         <div className="grid grid-cols-2 gap-4 mt-6">
           {salesByCategory.map((category, index) => (
-            <div key={category.category} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
+            <div
+              key={category.category}
+              className="flex flex-col gap-2 p-3 bg-muted/50 rounded-lg sm:flex-row sm:items-center sm:justify-between"
+            >
               <div className="flex items-center gap-2">
                 <div
                   className="w-3 h-3 rounded-full"
@@ -101,7 +104,7 @@ export function SalesByCategory() {
                 />
                 <span className="text-sm font-medium">{category.category}</span>
               </div>
-              <div className="text-right">
+              <div className="text-left sm:text-right">
                 <p className="text-sm font-semibold">
                   R$ {category.sales.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                 </p>

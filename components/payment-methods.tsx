@@ -99,15 +99,18 @@ export function PaymentMethods() {
         {/* Resumo dos métodos */}
         <div className="grid grid-cols-2 gap-4 mt-6">
           {paymentMethods.map((method, index) => (
-            <div key={method.method} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
+            <div
+              key={method.method}
+              className="flex flex-col gap-2 p-3 bg-muted/50 rounded-lg sm:flex-row sm:items-center sm:justify-between"
+            >
               <div className="flex items-center gap-2">
                 <div
                   className="w-3 h-3 rounded-full"
                   style={{ backgroundColor: COLORS[index % COLORS.length] }}
                 />
-                <span className="text-sm    font-medium">{method.method}</span>
+                <span className="text-sm font-medium">{method.method}</span>
               </div>
-              <div className="text-right">
+              <div className="text-left sm:text-right">
                 <p className="text-sm font-semibold">
                   R$ {method.amount.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                 </p>
