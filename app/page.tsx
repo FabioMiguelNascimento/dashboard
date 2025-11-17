@@ -19,13 +19,13 @@ export default function Home() {
             <SalesChart />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <AccessHeatmap />
-              <PaymentMethods />
+            <SalesByCategory />
             </div>
           </div>
 
           <div className="lg:col-span-5 space-y-6">
-              <TopAndLowSellingProducts />
-            <SalesByCategory />
+            <TopAndLowSellingProducts />
+            <PaymentMethods />
           </div>
         </div>
       </main>
