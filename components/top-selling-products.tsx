@@ -35,7 +35,7 @@ export function TopAndLowSellingProducts() {
               label: "Vendas",
             },
           }}
-          className="h-[400px] w-full"
+          className="h-72 w-full"
         >
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>

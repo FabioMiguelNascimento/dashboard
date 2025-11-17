@@ -78,7 +78,7 @@ export function SalesChart() {
               color: metricConfig.averageTicket.color,
             },
           }}
-          className="h-[400px] w-full"
+          className="h-80 w-full"
         >
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={salesByHour} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>

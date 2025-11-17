@@ -52,7 +52,7 @@ export function PaymentMethods() {
               label: "Transações",
             },
           }}
-          className="h-[300px] w-full"
+          className="h-72 w-full"
         >
           <ResponsiveContainer width="100%" height="100%">
             <BarChart

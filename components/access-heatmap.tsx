@@ -15,7 +15,7 @@ const getIntensityColor = (value: number) => {
 export function AccessHeatmap() {
   const { salesHeatmap } = useDashboard()
   return (
-    <Card className="border-border bg-card w-fit">
+    <Card className="border-border bg-card w-full">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">Mapa de Calor Semanal</CardTitle>
         <p className="text-sm text-muted-foreground">Intensidade de vendas por hora e dia</p>

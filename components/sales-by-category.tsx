@@ -2,7 +2,7 @@
 
 import { useDashboard } from "@/app/contexts/dashboard.context"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
+import { ChartContainer, ChartTooltip } from "@/components/ui/chart"
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts"
 
 const COLORS = [
@@ -49,7 +49,7 @@ export function SalesByCategory() {
               label: "Vendas",
             },
           }}
-          className="h-[400px] w-full"
+          className="h-72 w-full"
         >
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
