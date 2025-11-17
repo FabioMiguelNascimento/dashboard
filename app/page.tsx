@@ -1,5 +1,6 @@
 import { AccessHeatmap } from "@/components/access-heatmap";
 import Header from "@/components/header";
+import { PaymentMethods } from "@/components/payment-methods";
 import { SalesChart } from "@/components/sales-chart";
 import { TopAndLowSellingProducts } from "@/components/top-selling-products";
 import { DashboardProvider } from "./contexts/dashboard.context";
@@ -12,6 +13,7 @@ export default function Home() {
         <SalesChart />
         <AccessHeatmap />
         <TopAndLowSellingProducts />
+        <PaymentMethods />
       </main>
     </DashboardProvider>
   );
