@@ -15,7 +15,7 @@ const getIntensityColor = (value: number) => {
 export function AccessHeatmap() {
   const { salesHeatmap } = useDashboard()
   return (
-    <Card className="border-border bg-card">
+    <Card className="border-border bg-card w-fit">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">Mapa de Calor Semanal</CardTitle>
         <p className="text-sm text-muted-foreground">Intensidade de vendas por hora e dia</p>
@@ -32,7 +32,7 @@ export function AccessHeatmap() {
                     role="button"
                     tabIndex={0}
                     aria-label={`${row.day} ${hourData.hour}: intensidade ${hourData.intensity}/100`}
-                    className={`h-6 flex-1 rounded-sm ${getIntensityColor(
+                    className={`h-6 w-6 rounded-sm ${getIntensityColor(
                       hourData.intensity
                     )} hover:ring-2 hover:ring-primary transition-all duration-200 cursor-pointer group relative`}
                     title={`${row.day} ${hourData.hour}: ${hourData.intensity}/100`}
@@ -48,7 +48,6 @@ export function AccessHeatmap() {
         </div>
         
         <div className="flex items-center justify-between mt-6 pt-4 border-t border-border">
-          <span className="text-xs text-muted-foreground">Intensidade:</span>
           <div className="flex items-center gap-2">
             <span className="text-xs text-muted-foreground">Baixa</span>
             <div className="flex gap-1">
