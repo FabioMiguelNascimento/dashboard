@@ -33,14 +33,14 @@ export function SalesChart() {
     } as const
   }, [])
 
-    return (
+  return (
     <Card className="border-border bg-card">
-  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
-        <div>
+      <CardHeader className="flex flex-col gap-4 pb-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+        <div className="space-y-1">
           <CardTitle className="text-xl font-semibold">Vendas por Hora</CardTitle>
-          <p className="text-sm text-muted-foreground mt-1">Últimas 24 horas</p>
+          <p className="text-sm text-muted-foreground">Últimas 24 horas</p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           {(["sales", "transactions", "averageTicket"] as const).map((m) => (
             <button
               key={m}
