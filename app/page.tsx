@@ -1,7 +1,8 @@
-import Header from "@/components/header";
-import { DashboardProvider } from "./contexts/dashboard.context";
-import { SalesChart } from "@/components/sales-chart";
 import { AccessHeatmap } from "@/components/access-heatmap";
+import Header from "@/components/header";
+import { SalesChart } from "@/components/sales-chart";
+import { TopAndLowSellingProducts } from "@/components/top-selling-products";
+import { DashboardProvider } from "./contexts/dashboard.context";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Header />
         <SalesChart />
         <AccessHeatmap />
+        <TopAndLowSellingProducts />
       </main>
     </DashboardProvider>
   );
