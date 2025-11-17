@@ -18,14 +18,14 @@ export default function Home() {
           <div className="lg:col-span-7 space-y-6">
             <SalesChart />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <TopAndLowSellingProducts />
+            <AccessHeatmap />
               <PaymentMethods />
             </div>
           </div>
 
           <div className="lg:col-span-5 space-y-6">
+              <TopAndLowSellingProducts />
             <SalesByCategory />
-            <AccessHeatmap />
           </div>
         </div>
       </main>
